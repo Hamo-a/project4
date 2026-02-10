@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="register-page">
+    <section class="section-form">
+        <div class="welcome-box">
+            <!-- Main Title -->
+            <h2>
+                <p>Hello , <span id="welcomeWord">Welcome</span></p>
+            </h2>
+            <!-- Sub Text -->
+            <p id="welcomeText">
+                Don't have an account?
+            </p>
+            <!-- Register Button -->
+            <button class="welcome-btn" id="welcomeBtn">
+                Login 
+                <span class="arrow" id="arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </button>
+        </div>
+        <!-- Form -->
+        <form id="registerForm" class="register-form">
+            <h2>Login</h2>
+            <!-- Email -->
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter email" id="email">
+            </div>
+            <!-- Password -->
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password" id="password">
+            </div>
+            <div class="input-group">
+                <label for="rememberMe">
+                    <input type="checkbox" id="rememberMe"> Remember Me
+                </label>
+            </div>
+            <button type="submit" class="register-btn" id="sign_in">Login</button>
+            <p>
+                Don't have account?
+                <a href="register.html">Register</a>
+            </p>
+        </form>
+    </section>
+    <!-- Login js -->
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>

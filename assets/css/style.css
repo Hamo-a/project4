@@ -1,0 +1,413 @@
+/* ===== Navbar =====  */
+.nav-link.active {
+  color: #054413;
+}
+.nav-link:hover {
+  color: #0a6623;
+}
+.navbar-brand img {
+  height: 3.125rem;
+  width: 3.125rem;
+  object-fit: cover;
+}
+.navbar .btns {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.navbar .btns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navbar ul#links a {
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.navbar ul#links li:first-child a {
+  background-color: #0a6623;
+  color: white;
+}
+.navbar ul#links li:first-child a:hover {
+  background-color: #054413;
+}
+.navbar ul#links li:last-child a {
+  border: 2px solid #0a6623;
+  color: #0a6623;
+}
+.navbar ul#links li:last-child a:hover {
+  background-color: #0a6623;
+  color: white;
+}
+.navbar ul#user_info {
+  display: none ;
+  list-style: none;
+}
+.navbar ul#user_info  li a {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #0a6623;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #0a6623;
+  color: #fff;
+}
+.form-control {
+  box-shadow: none;
+  border: 2px solid;
+}
+.form-control:focus {
+  border-color: #0a6623;
+  box-shadow: 0 0 5px rgba(10, 102, 35, 0.5);
+}
+.badge-aromatic {
+  background-color: #e6f4ea;
+  color: #0a6623;
+}
+.badge-medicinal {
+  background-color: #e8f0fe;
+  color: #1a4fd8;
+}
+.badge-ornamental {
+  background-color: #fce8e6;
+  color: #c5221f;
+}
+.plant-card {
+  aspect-ratio: 5 / 6;
+  transition: all 0.3s ease;
+}
+.plant-card:hover {
+  border: 2px solid #0a6623;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+.plant-card img {
+  height: 55%;
+  object-fit: cover;
+}
+
+.basket-icon {
+  display: none;
+  margin-right: 6px;
+}
+
+.add-to-basket.added {
+  background-color: #777;
+  border: none;
+}
+
+.add-to-basket.added .basket-icon {
+  display: inline-block;
+}
+
+.plant-card .fa-heart {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.plant-card:hover .fa-heart {
+  color: #dc3545;
+  transform: scale(1.2);
+}
+/* ===== Footer ====== */
+.footer-custom {
+  background-color: #054413;
+  color: #fff;
+  font-size: 0.9rem;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+.footer-custom img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+.footer-link {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.footer-link:hover {
+  color: #ffc107 !important;
+  transform: translateX(5px);
+}
+.btn-floating:hover {
+  background-color: #fff;
+  color: #054413;
+  border-color: #fff;
+}
+/* ===== Page Layout Register && Login ===== */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ===== Container ===== */
+.section-form {
+  width: 80%;
+  max-width: 1100px;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+/* ===== Welcome Box ===== */
+.welcome-box {
+  width: 50%;
+  background: linear-gradient(160deg, #0a6623, #054413);
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 35%;
+  border-bottom-right-radius: 35%;
+}
+.welcome-box h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.welcome-box p {
+  margin-top: 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+.welcome-btn {
+  width: fit-content;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  color: #0a6623;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.welcome-btn:hover {
+  transform: translateY(-3px);
+}
+/* ===== Form Side ===== */
+.register-form {
+  width: 50%;
+  background: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.register-form h2 {
+  margin-bottom: 10px;
+}
+/* ===== Input Groups ===== */
+.names {
+  display: flex;
+  gap: 15px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.input-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+/* Focus Effect */
+.input-group input:focus {
+  outline: none;
+  border-color: #0a6623;
+  box-shadow: 0 0 6px rgba(10, 102, 35, 0.4);
+}
+/* ===== Register Button ===== */
+.register-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #0a6623;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.register-btn:hover {
+  background: #054413;
+  transform: translateY(-2px);
+}
+/* ===== Login Text ===== */
+.register-form p {
+  font-size: 14px;
+}
+.register-form a {
+  color: #0a6623;
+  font-weight: bold;
+  text-decoration: none;
+}
+.arrow {
+  display: inline-block;
+  transition: 0.4s;
+}
+.arrow.move {
+  animation: arrowMove 0.6s infinite alternate;
+}
+@keyframes arrowMove {
+  from { transform: translateX(0); }
+  to { transform: translateX(9px); }
+}
+/* ==== Afer Login ==== */
+.navbar ul#user_info{
+  display: flex;
+  font-style: italic;
+}
+/* Basket  */
+.navbar ul#user_info  .shoping_card {
+  position: relative;
+}
+.navbar ul#user_info  .shoping_card i{
+  cursor: pointer;
+  font-size: 20px;
+  color: #0a6623;
+}
+.navbar ul#user_info  .shoping_card  .number_plants{
+  position: absolute;
+  width: 20px;
+  height: auto;
+  line-height: 20px;
+  background-color: #1a4fd8;
+  color: white;
+  text-align: center;
+  display: none;
+  border-radius: 50%;
+  font-size: 15px;
+  top: -10px;
+  right: -10px;
+}
+/* Slide Bar  */
+.navbar ul#user_info  .shoping_card .show_plants{
+  position: absolute;
+  z-index: 99;
+  top: 50px;
+  transform: translateX(250px);
+  transition: 0.3s ease;
+  width: 250px;
+  min-height: 700px;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding-right: 8px;
+  background-color: white;
+}
+.navbar ul#user_info  .shoping_card .show_plants.open{
+  transform: translateX(-40px);
+}
+/* Log out  */
+.navbar ul#user_info #logout{
+  display: block;
+  cursor: pointer;
+  color: #c5221f;
+  border: #c5221f 2px solid;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+} 
+.navbar ul#user_info #logout:hover{
+  background-color: #c5221f;
+  color: white;
+}
+/* ===== Basket Product Item ===== */
+.plants_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9fdfb;
+}
+/* Left side */
+.plants_list .left h5 {
+  margin: 0;
+  font-size: 14px;
+  color: #054413;
+}
+/* Quantity control */
+.plants_list .digital {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+.plants_list .digital button {
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0a6623;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.plants_list .digital button:hover {
+  background-color: #054413;
+}
+.plants_list .digital-numder {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #0a6623;
+}
+/* Right side */
+.plants_list .right {
+  text-align: right;
+}
+.plants_list .right h5 {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+.plants_list .right p {
+  margin: 4px 0 0;
+  font-weight: bold;
+  color: #0a6623;
+}
+/* All Plants */
+.navbar ul#user_info  .shoping_card .show_plants a{
+  text-decoration: none;
+  margin: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9fdfb;
+  transition: 0.3s ease;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+}
+.navbar ul#user_info  .shoping_card .show_plants a:hover{
+  background-color: #0a6623;
+  color: white;
+}
+/* //////////////// */
+.btn-style{
+  background-color: #c5221f;
+  color: white;
+}

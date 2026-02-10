@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Plants</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header> 
+        <nav
+            class="navbar navbar-expand-lg bg-body-tertiary py-0 border-bottom border-1 border-success position-fixed top-0 z-3 w-100">
+            <div class="container-fluid py-2 px-lg-5">
+                <!-- Logo -->
+                <div class="navbar-brand d-flex justify-content-center align-items-center mx-3 mx-lg-5">
+                    <a href="index.html"><img src="assets/imgs/logo/Logo.png" alt="Logo"
+                            class="border border-3 border-success rounded-circle"></a>
+                    <p class="fst-italic fw-bold ms-3 my-auto">Nature<span class="text-success ">Plants</span></p>
+                </div>
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  mx-3 mx-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Guide</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Plants
+                            </a>
+                            <!-- Dropdown Menu -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Aromatic Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Medicinal Plants</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ornamental Plants</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btns">
+                    <!-- قبل تسجيل الدخول -->
+                    <ul id="links">
+                        <li>
+                            <a href="login.html" >Login</a>
+                        </li>
+                        <li>
+                            <a href="register.html">Register</a>
+                        </li>
+                    </ul>
+                    <!-- بعد تسجيل الدخول -->
+                    <ul id="user_info">
+                        <!-- User Name -->
+                        <li><a href="#" id="user"></a></li>
+                        <!-- Basket  -->
+                        <li class="shoping_card">
+                            <i class="fas fa-shopping-basket shopping-basket"></i>
+                            <span class="number_plants">0</span>
+                            <!-- Show Slider  -->
+                            <div class="show_plants">
+                                <div class="shadow_plants_list"></div>
+                                <a href="wishlist.html"> View All Plants</a>
+                            </div>
+                        </li>
+                        <li><a href="#" id="logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Section1 start -->
+    <section>
+        <div class="container px-lg-5">
+            <div class="d-flex  my-5 pt-5 gap-3">
+                <!-- Filter -->
+                <div class="dropdown ">
+                    <button id="filter-btn" class="btn btn-outline-success dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown">
+                        Search by: Plant name or Category or Price
+                    </button>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" data-filter="name" href="#">Search by Plant name</a></li>
+                        <li><a class="dropdown-item" data-filter="category" href="#">Search by Category</a></li>
+                        <li><a class="dropdown-item" data-filter="price" href="#">Search by Price </a></li>
+                    </ul>
+                        <!-- <li><a class="dropdown-item" data-name="name" href="#">Search by Plant name</a></li> -->
+                        <!-- <li><a class="dropdown-item" data-category="category" href="#">Search by Category</a></li> -->
+                        <!-- <li><a class="dropdown-item" data-price="price" href="#">Search by Price </a></li> -->
+                </div>
+                <!-- Search -->
+                <form class="d-flex flex-grow-1" role="search">
+                    <input class="form-control me-2 align-content-lg-stretch " type="search" placeholder="Search"
+                        id="search-input" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Section2 start -->
+    <section class="py-5">
+        <div class="container px-lg-5">
+            <div class="row g-4" id="products-container"></div>
+        </div>
+    </section>
+    <!-- Footer start -->
+    <footer class="text-white pt-5 pb-4 mt-5 footer-custom">
+        <div class="container px-lg-5">
+            <div class="row">
+                <!-- column1 -->
+                <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="assets/imgs/logo/Logo.png" alt="Logo"
+                            class="rounded-circle border border-2 border-light">
+                        <h5 class="text-uppercase mb-0 ms-3 fw-bold">Nature<span class="text-warning">Plants</span></h5>
+                    </div>
+                    <p class="small text-white-50">
+                        وجهتك الأولى للحصول على أجمل النباتات الطبية والعطرية ونباتات الزينة. نعتني بالطبيعة لتصل إلى
+                        منزلك.
+                    </p>
+                </div>
+                <!-- column2 : links -->
+                <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5
+                        class="text-uppercase mb-4 fw-bold text-warning border-bottom border-warning d-inline-block pb-1">
+                        Plants</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">Aromatic
+                                Plants</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">Medicinal
+                                Plants</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">Ornamental
+                                Plants</a></li>
+                    </ul>
+                </div>
+                <!-- column3 : links -->
+                <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5
+                        class="text-uppercase mb-4 fw-bold text-warning border-bottom border-warning d-inline-block pb-1">
+                        Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">Guide</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none footer-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- column4 : contact -->
+                <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5
+                        class="text-uppercase mb-4 fw-bold text-warning border-bottom border-warning d-inline-block pb-1">
+                        Contact</h5>
+                    <p class="mb-2"><i class="fas fa-home me-3"></i> Cairo, Egypt</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-3"></i> info@natureplants.com</p>
+                    <p class="mb-2"><i class="fas fa-phone me-3"></i> +20 123 456 789</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-light btn-floating m-1 rounded-circle btn-sm"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-floating m-1 rounded-circle btn-sm"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-floating m-1 rounded-circle btn-sm"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-floating m-1 rounded-circle btn-sm"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-4 border-light opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="mb-0">
+                        © 2025 Copyright:
+                        <a href="#" class="text-warning text-decoration-none fw-bold">NaturePlants.com</a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <p class="text-md-end text-white-50 mb-0 small">Designed for Green Lovers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

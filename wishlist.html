@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Plants</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header> 
+        <nav
+            class="navbar navbar-expand-lg bg-body-tertiary py-0 border-bottom border-1 border-success position-fixed top-0 z-3 w-100">
+            <div class="container-fluid py-2 px-lg-5">
+                <!-- Logo -->
+                <div class="navbar-brand d-flex justify-content-center align-items-center mx-3 mx-lg-5">
+                    <a href="index.html"><img src="assets/imgs/logo/Logo.png" alt="Logo"
+                            class="border border-3 border-success rounded-circle"></a>
+                    <p class="fst-italic fw-bold ms-3 my-auto">Nature<span class="text-success ">Plants</span></p>
+                </div>
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  mx-3 mx-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Guide</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Plants
+                            </a>
+                            <!-- Dropdown Menu -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Aromatic Plants</a></li>
+                                <li><a class="dropdown-item" href="#">Medicinal Plants</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ornamental Plants</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btns">
+                    <!-- قبل تسجيل الدخول -->
+                    <ul id="links">
+                        <li>
+                            <a href="login.html" >Login</a>
+                        </li>
+                        <li>
+                            <a href="register.html">Register</a>
+                        </li>
+                    </ul>
+                    <!-- بعد تسجيل الدخول -->
+                    <ul id="user_info">
+                        <!-- User Name -->
+                        <li><a href="#" id="user"></a></li>
+                        <!-- Basket  -->
+                        <li class="shoping_card">
+                            <i class="fas fa-shopping-basket shopping-basket"></i>
+                            <span class="number_plants">0</span>
+                            <!-- Show Slider  -->
+                            <div class="show_plants">
+                                <div class="shadow_plants_list"></div>
+                                <a href="wishlist.html"> View All Plants</a>
+                            </div>
+                        </li>
+                        <li><a href="#" id="logout">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!-- Section2 start -->
+    <section class="py-5">
+        <div class="container px-lg-5">
+            <div class="row g-4" id="products-container"></div>
+        </div>
+    </section>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/wishlist.js"></script>
+    <!-- User  -->
+    <script src="assets/js/user.js"></script>
+
+</body>
+
+</html>
