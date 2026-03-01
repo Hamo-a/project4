@@ -17,7 +17,7 @@
 
 <body>
     <!-- header start -->
-    <header> 
+    <header>
         <nav
             class="navbar navbar-expand-lg bg-body-tertiary py-0 border-bottom border-1 border-success position-fixed top-0 z-3 w-100">
             <div class="container-fluid py-2 px-lg-5">
@@ -41,7 +41,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Guide</a>
                         </li>
-                        <!-- Dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -69,7 +68,7 @@
                     <!-- قبل تسجيل الدخول -->
                     <ul id="links">
                         <li>
-                            <a href="login.html" >Login</a>
+                            <a href="login.html">Login</a>
                         </li>
                         <li>
                             <a href="register.html">Register</a>
@@ -100,25 +99,22 @@
         <div class="container px-lg-5">
             <div class="d-flex  my-5 pt-5 gap-3">
                 <!-- Filter -->
-                <div class="dropdown ">
-                    <button id="filter-btn" class="btn btn-outline-success dropdown-toggle" type="button"
-                        data-bs-toggle="dropdown">
-                        Search by: Plant name or Category or Price
-                    </button>
-                    <ul class="dropdown-menu w-100">
-                        <li><a class="dropdown-item" data-filter="name" href="#">Search by Plant name</a></li>
-                        <li><a class="dropdown-item" data-filter="category" href="#">Search by Category</a></li>
-                        <li><a class="dropdown-item" data-filter="price" href="#">Search by Price </a></li>
-                    </ul>
-                        <!-- <li><a class="dropdown-item" data-name="name" href="#">Search by Plant name</a></li> -->
-                        <!-- <li><a class="dropdown-item" data-category="category" href="#">Search by Category</a></li> -->
-                        <!-- <li><a class="dropdown-item" data-price="price" href="#">Search by Price </a></li> -->
-                </div>
+                <select id="filter-type" class="form-select" style="max-width: 250px;">
+                    <option value="name">Search by Plant Name</option>
+                    <option value="category">Search by Category</option>
+                    <option value="price">Search by Price</option>
+                </select>
                 <!-- Search -->
                 <form class="d-flex flex-grow-1" role="search">
-                    <input class="form-control me-2 align-content-lg-stretch " type="search" placeholder="Search"
-                        id="search-input" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="button">Search</button>
+                    <input class="form-control me-2 align-content-lg-stretch " 
+                        type="search" 
+                        placeholder="Search"
+                        id="search-input" 
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success" 
+                        type="button">
+                        Search
+                    </button>
                 </form>
             </div>
         </div>
@@ -209,6 +205,10 @@
     </footer>
     <!-- Bootstrap js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- User  -->
+    <script src="assets/js/user.js"></script>
+    <!-- Basket  -->
+    <script src="assets/js/basket-global.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
 </body>

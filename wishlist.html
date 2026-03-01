@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="wishlist-page">
+
     <!-- header start -->
     <header> 
         <nav
@@ -95,18 +96,32 @@
             </div>
         </nav>
     </header>
-        <!-- Section2 start -->
-    <section class="py-5">
+    <!-- products -->
+    <section class="py-2">
         <div class="container px-lg-5">
             <div class="row g-4" id="products-container"></div>
+            <div class="total_price d-flex flex-column justify-content-center align-items-center text-center mx-auto mt-3" style="width: 150px; margin-top: auto">
+                <h5 class="fw-bold">Total Price: <span class="text-success" id="total_price"></span></h5>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Favourite Plants -->
+    <section>
+        <div class="container px-lg-1">
+            <h5 class="text-center fw-bold text-success my-5">Favourite Plants</h5>
+            <div class="row g-4" id="favourite-container">
+            </div>
         </div>
     </section>
     <!-- Bootstrap js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- custom js -->
-    <script src="assets/js/wishlist.js"></script>
     <!-- User  -->
     <script src="assets/js/user.js"></script>
+    <!-- Basket  -->    
+    <script src="assets/js/basket-global.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/wishlist.js"></script>
 
 </body>
 
